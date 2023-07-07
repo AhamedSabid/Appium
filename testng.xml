@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutoBots Appium Suite">
+  <test name="Appium Test">
+    <classes>
+      <class name="com.rvsappiumautomation.testcases.FirstPage"/>
+      <class name="com.rvsappiumautomation.testcases.SecondPage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

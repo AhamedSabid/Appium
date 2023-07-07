@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="3" total="6" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AutoBots Appium Suite" duration-ms="55913" started-at="2020-01-13T12:03:38Z" finished-at="2020-01-13T12:04:34Z">
+    <groups>
+    </groups>
+    <test name="Appium Test" duration-ms="55913" started-at="2020-01-13T12:03:38Z" finished-at="2020-01-13T12:04:34Z">
+      <class name="com.rvsappiumautomation.testcases.FirstPage">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="launchApp" is-config="true" duration-ms="18321" started-at="2020-01-13T17:33:18Z" finished-at="2020-01-13T17:33:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="loadHTMLConfigFile()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="loadHTMLConfigFile" is-config="true" duration-ms="1610" started-at="2020-01-13T17:33:37Z" finished-at="2020-01-13T17:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadHTMLConfigFile -->
+        <test-method status="PASS" signature="currentRunningTestName(java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="currentRunningTestName" is-config="true" duration-ms="6" started-at="2020-01-13T17:33:38Z" finished-at="2020-01-13T17:33:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.FirstPage.testCase001() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentRunningTestName -->
+        <test-method status="PASS" signature="testCase001()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="testCase001" duration-ms="29" started-at="2020-01-13T17:33:38Z" finished-at="2020-01-13T17:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase001 -->
+        <test-method status="PASS" signature="collectingTestResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="collectingTestResult" is-config="true" duration-ms="34" started-at="2020-01-13T17:33:38Z" finished-at="2020-01-13T17:33:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase001 status=SUCCESS method=FirstPage.testCase001()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.FirstPage.testCase001() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectingTestResult -->
+        <test-method status="PASS" signature="currentRunningTestName(java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="currentRunningTestName" is-config="true" duration-ms="0" started-at="2020-01-13T17:33:38Z" finished-at="2020-01-13T17:33:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.FirstPage.testCase002() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentRunningTestName -->
+        <test-method status="FAIL" signature="testCase002()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="testCase002" duration-ms="25721" started-at="2020-01-13T17:33:38Z" finished-at="2020-01-13T17:34:04Z">
+          <exception class="com.rvsappiumautomation.exception.ExceptionHandler">
+            <message>
+              <![CDATA[This test is failed because of the Exception in com.rvsappiumautomation.testcases.FirstPage.testCase002()
+The reason of this exception is: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@resource-id='com.android.packageinstaller:id/permission_allow_button'] (tried for 25 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.rvsappiumautomation.exception.ExceptionHandler: This test is failed because of the Exception in com.rvsappiumautomation.testcases.FirstPage.testCase002()
+The reason of this exception is: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@resource-id='com.android.packageinstaller:id/permission_allow_button'] (tried for 25 second(s) with 500 milliseconds interval)
+	at com.rvsappiumautomation.testcases.FirstPage.testCase002(FirstPage.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.rvsappiumautomation.exception.ExceptionHandler -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase002 -->
+        <test-method status="PASS" signature="collectingTestResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="collectingTestResult" is-config="true" duration-ms="1892" started-at="2020-01-13T17:34:04Z" finished-at="2020-01-13T17:34:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase002 status=FAILURE method=FirstPage.testCase002()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.FirstPage.testCase002() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectingTestResult -->
+        <test-method status="PASS" signature="currentRunningTestName(java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="currentRunningTestName" is-config="true" duration-ms="1" started-at="2020-01-13T17:34:06Z" finished-at="2020-01-13T17:34:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.FirstPage.testCase003() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentRunningTestName -->
+        <test-method status="FAIL" signature="testCase003()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="testCase003" duration-ms="25458" started-at="2020-01-13T17:34:06Z" finished-at="2020-01-13T17:34:31Z">
+          <exception class="com.rvsappiumautomation.exception.ExceptionHandler">
+            <message>
+              <![CDATA[This test is failed because of the Exception in com.rvsappiumautomation.testcases.FirstPage.testCase003()
+The reason of this exception is: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@resource-id='com.android.packageinstaller:id/permission_allow_button'] (tried for 25 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.rvsappiumautomation.exception.ExceptionHandler: This test is failed because of the Exception in com.rvsappiumautomation.testcases.FirstPage.testCase003()
+The reason of this exception is: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[@resource-id='com.android.packageinstaller:id/permission_allow_button'] (tried for 25 second(s) with 500 milliseconds interval)
+	at com.rvsappiumautomation.testcases.FirstPage.testCase003(FirstPage.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.rvsappiumautomation.exception.ExceptionHandler -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase003 -->
+        <test-method status="PASS" signature="collectingTestResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="collectingTestResult" is-config="true" duration-ms="1345" started-at="2020-01-13T17:34:31Z" finished-at="2020-01-13T17:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase003 status=FAILURE method=FirstPage.testCase003()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.FirstPage.testCase003() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectingTestResult -->
+        <test-method status="PASS" signature="endReportGeneration()[pri:0, instance:com.rvsappiumautomation.testcases.FirstPage@e25b2fe]" name="endReportGeneration" is-config="true" duration-ms="7756" started-at="2020-01-13T17:34:34Z" finished-at="2020-01-13T17:34:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReportGeneration -->
+      </class> <!-- com.rvsappiumautomation.testcases.FirstPage -->
+      <class name="com.rvsappiumautomation.testcases.SecondPage">
+        <test-method status="PASS" signature="currentRunningTestName(java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="currentRunningTestName" is-config="true" duration-ms="1" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.SecondPage.testCase004()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentRunningTestName -->
+        <test-method status="SKIP" signature="testCase004()[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="testCase004" duration-ms="4" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping – This is not ready for testing ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping – This is not ready for testing 
+	at com.rvsappiumautomation.testcases.SecondPage.testCase004(SecondPage.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase004 -->
+        <test-method status="PASS" signature="collectingTestResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="collectingTestResult" is-config="true" duration-ms="4" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase004 status=SKIP method=SecondPage.testCase004()[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.SecondPage.testCase004()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectingTestResult -->
+        <test-method status="PASS" signature="testCase005()[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="testCase005" duration-ms="2" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase005 -->
+        <test-method status="PASS" signature="currentRunningTestName(java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="currentRunningTestName" is-config="true" duration-ms="0" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.SecondPage.testCase005() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentRunningTestName -->
+        <test-method status="PASS" signature="collectingTestResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="collectingTestResult" is-config="true" duration-ms="3" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase005 status=SUCCESS method=SecondPage.testCase005()[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.SecondPage.testCase005() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectingTestResult -->
+        <test-method status="FAIL" signature="testCase006()[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="testCase006" duration-ms="7" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.rvsappiumautomation.testcases.SecondPage.testCase006(SecondPage.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase006 -->
+        <test-method status="PASS" signature="currentRunningTestName(java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="currentRunningTestName" is-config="true" duration-ms="0" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.SecondPage.testCase006() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentRunningTestName -->
+        <test-method status="PASS" signature="collectingTestResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872]" name="collectingTestResult" is-config="true" duration-ms="1354" started-at="2020-01-13T17:34:33Z" finished-at="2020-01-13T17:34:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase006 status=FAILURE method=SecondPage.testCase006()[pri:0, instance:com.rvsappiumautomation.testcases.SecondPage@754ba872] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rvsappiumautomation.testcases.SecondPage.testCase006() throws com.rvsappiumautomation.exception.ExceptionHandler]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectingTestResult -->
+      </class> <!-- com.rvsappiumautomation.testcases.SecondPage -->
+    </test> <!-- Appium Test -->
+  </suite> <!-- AutoBots Appium Suite -->
+</testng-results>

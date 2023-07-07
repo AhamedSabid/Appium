@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutoBots Appium Suite]">
+  <test name="Appium Test">
+    <classes>
+      <class name="com.rvsappiumautomation.testcases.FirstPage"/>
+      <class name="com.rvsappiumautomation.testcases.SecondPage"/>
+    </classes>
+  </test> <!-- Appium Test -->
+  <test name="Appium Test(failed)">
+    <classes>
+      <class name="com.rvsappiumautomation.testcases.SecondPage">
+        <methods>
+          <include name="testCase006"/>
+          <include name="collectingTestResult"/>
+          <include name="testCase004"/>
+          <include name="currentRunningTestName"/>
+        </methods>
+      </class> <!-- com.rvsappiumautomation.testcases.SecondPage -->
+      <class name="com.rvsappiumautomation.testcases.FirstPage">
+        <methods>
+          <include name="testCase002"/>
+          <include name="testCase003"/>
+          <include name="loadHTMLConfigFile"/>
+          <include name="collectingTestResult"/>
+          <include name="launchApp"/>
+          <include name="currentRunningTestName"/>
+          <include name="endReportGeneration"/>
+        </methods>
+      </class> <!-- com.rvsappiumautomation.testcases.FirstPage -->
+    </classes>
+  </test> <!-- Appium Test(failed) -->
+</suite> <!-- Failed suite [AutoBots Appium Suite] -->
